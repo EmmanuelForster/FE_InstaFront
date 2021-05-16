@@ -238,9 +238,11 @@ footer {
     }
 
     .icons {
-        bottom: -100px;
+        /* bottom: -50px; */
+        padding-left: 25%;
+        margin-bottom: 5%;
         justify-content: space-around;
-        position: absolute;
+        /* position: absolute; */
         width: 100vw;
     }
 
