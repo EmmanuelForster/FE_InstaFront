@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: grid;
+    grid-gap: 5%;
+}
+
+header {
+    align-items: center;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-columns: 30% 65% 5%;
+    height: 75px;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+
+main {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: repeat(7, 14.28%);
+    padding: 5%;
+}
+
+section {
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 0.4px solid rgba(34, 34, 34, 0.5);
+    box-sizing: border-box;
+}
+
+.container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100px;
+    align-items: center;
+    padding-left: 3%;
+}
+
+.container-bottom {
+    justify-content: space-evenly;
+    display: grid;
+    align-items: center;
+    padding: 5% 0;
+}
+
+a {
+    color: #1CA0F6;
+    text-decoration: none;
+}
+
+.sidebar-top {
+    align-items: center;
+    display: grid;
+    grid-column: 6;
+    grid-gap: 50%;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding-left: 25%;
+}
+
+
+.point {
+    background-color: #222222;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+}
+
+.sidebar-bottom {
+    align-items: center;
+    display: grid;
+    grid-column: 6/9;
+    grid-gap: 10%;
+}
+
+.card {
+    display: grid;
+    grid-column: 2;
+    grid-gap: 40%;
+
+}
+
+.sidebar-bottom div div p {
+    color: #808080;
+    font-weight: bold;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.follow {
+    align-items: center;
+    display: grid;
+    grid-gap: 0%;
+    grid-template-columns: 0.5fr 2fr 1fr;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(4, 10%);
+    margin: 1% 0;
+}
+
+.comments {
+    display: grid;
+    grid-gap: 5%;
+}
+
+.options {
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 10% 10% 10%;
+    justify-content: end;
+}
+
+.pofile-name {
+    align-items: center;
+    border-bottom: 0.4px solid rgba(34, 34, 34, 0.5);
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding: 1% 3%;
+}
+
+
+h1 {
+    font-weight: normal;
+}
+
+input {
+    background: #FAFAFA;
+    border-radius: 5px;
+    border: 0.3px solid #222222;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 1%;
+    width: 30%;
+}
+
+.to-scale {
+    transform: scale(1.5);
+}
+
+img {
+    border-radius: 50%;
+}
+
+#number-comments {
+    color: #A49B9B;
+    font-size: small;
+}
+
+footer {
+    align-items: center;
+    background-color: #222222;
+    color: white;
+    height: 28px;
+    left: 0px;
+    padding: 5px;
+    text-align: center;
+    top: 1085px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 30% 35% 10%;
+    }
+
+    .sidebar-top {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    header {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        grid-template-columns: 1fr 2fr 1fr;
+        margin: 1%;
+        width: 100vw;
+    }
+
+    body {
+        grid-gap: 1%;
+    }
+
+    .card {
+        grid-column: inherit;
+        grid-gap: 20%;
+    }
+
+    section {
+        width: 100vw;
+    }
+
+    .square {
+        transform: scale(0.6);
+    }
+
+    main {
+        grid-gap: 1%;
+        grid-template-columns: inherit;
+        padding: 0px;
+        width: 100vw;
+    }
+
+    .hist {
+        display: none;
+    }
+
+    .container-top {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .options{
+        justify-content: inherit;
+    }
+
+    .container-bottom {
+        padding: 0%;
+        grid-template-rows: 3fr1fr;
+    }
+
+    .icons {
+        bottom: -100px;
+        justify-content: space-around;
+        position: absolute;
+        width: 100vw;
+    }
+
+    .comments {
+        padding-left: 15%;
+        padding-bottom: 50px;
+        width: 100vw;
+    }
+
+    footer {
+        bottom: 0px;
+        margin: 1%;
+        position: absolute;
+        width: 100vw;
+    }
+}
